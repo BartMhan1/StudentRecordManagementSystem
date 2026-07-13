@@ -1,0 +1,136 @@
+@startuml
+' ==============================================================================
+' Diagram: Student Record Management System - UML Class Diagram
+' Generated from the approved Java 11 source code.
+' Demonstrates Abstraction, Inheritance, Encapsulation, and Polymorphism.
+' ==============================================================================
+
+title Student Record Management System - Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+
+abstract class Person {
+    - fullName : String
+    - dateOfBirth : LocalDate
+    - gender : String
+    + Person(fullName: String, dateOfBirth: LocalDate, gender: String)
+    + getFullName() : String
+    + setFullName(fullName: String) : void
+    + getDateOfBirth() : LocalDate
+    + setDateOfBirth(dateOfBirth: LocalDate) : void
+    + getGender() : String
+    + setGender(gender: String) : void
+}
+
+class Student {
+    - studentId : String
+    - course : String
+    - scores : double[]
+    + Student(fullName: String, dateOfBirth: LocalDate, gender: String, studentId: String, course: String, scores: double[])
+    + Student(other : Student)
+    + getStudentId() : String
+    + setStudentId(studentId: String) : void
+    + getCourse() : String
+    + setCourse(course: String) : void
+    + getScores() : double[]
+    + setScores(scores: double[]) : void
+    + getScore(index: int) : double
+    + setScore(index: int, score: double) : void
+}
+
+abstract class User {
+    - username : String
+    - password : String
+    + User(username: String, password: String)
+    + authenticate(inputPassword: String) : boolean
+    + {abstract} canModify() : boolean
+    + {abstract} getRoleName() : String
+}
+
+class AdminUser {
+    + AdminUser(username: String, password: String)
+    + canModify() : boolean
+    + getRoleName() : String
+}
+
+class TeacherUser {
+    + TeacherUser(username: String, password: String)
+    + canModify() : boolean
+    + getRoleName() : String
+}
+
+class GradeCalculator <<utility>> {
+    + {static} DISTINCTION_LIMIT : double = 70.0
+    + {static} MERIT_LIMIT : double = 60.0
+    + {static} PASS_LIMIT : double = 50.0
+    + {static} SUBJECT_NAMES : String[]
+    + {static} calculateAverage(scores: double[]) : double
+    + {static} calculateHighest(scores: double[]) : double
+    + {static} calculateLowest(scores: double[]) : double
+    + {static} classifyGrade(average: double) : String
+}
+
+class StudentRepository {
+    - csvPath : String
+    - students : List<Student>
+    + StudentRepository(csvPath: String)
+    + loadStudents() : void
+    + saveStudents() : void
+    + addStudent(student: Student) : void
+    + getAllStudents() : List<Student>
+    + findStudentById(studentId: String) : Student
+    + searchStudents(query: String) : List<Student>
+    + updateStudent(originalStudentId: String, updatedStudent: Student) : void
+    + deleteStudent(studentId: String) : boolean
+    + studentIdExists(studentId: String) : boolean
+    + sortStudentsBySurname() : void
+    + getTopThreeStudents() : List<Student>
+    + getPassCount() : int
+    + getFailCount() : int
+}
+
+class Main {
+    - {static} CSV_PATH : String
+    - {static} repository : StudentRepository
+    - {static} currentUser : User
+    - {static} scanner : Scanner
+    + {static} main(args: String[]) : void
+    - {static} runLoginFlow() : boolean
+    - {static} runMenuFlow() : boolean
+    - {static} handleAddStudent() : void
+    - {static} handleViewStudents() : void
+    - {static} handleSearchStudents() : void
+    - {static} handleUpdateStudent() : void
+    - {static} handleDeleteStudent() : void
+    - {static} handleClassReport() : void
+    - {static} displayStudent(s: Student) : void
+    - {static} displayStudentTable(list: List<Student>) : void
+}
+
+' ==============================================================================
+' LAYOUT HINTS & RELATIONSHIPS
+' ==============================================================================
+
+' Inheritance (Generalization) Relationships
+' Person appears above Student
+Person <|-- Student : inherits
+
+' User appears above AdminUser and TeacherUser
+User <|-- AdminUser : inherits / polymorphism
+User <|-- TeacherUser : inherits / polymorphism
+
+' Aggregation Relationship
+' StudentRepository o-- Student (StudentRepository center, Student right)
+StudentRepository "1" o-right- "0..*" Student : manages
+
+' Dependency Relationships
+' Main (left) uses StudentRepository (center) and User
+Main ..> StudentRepository : uses repository
+Main ..> User : currentUser session
+Main ..> Student : instantiates/manipulates
+
+' StudentRepository (center) uses GradeCalculator (right)
+StudentRepository ..> GradeCalculator : uses for statistics
+
+@enduml
