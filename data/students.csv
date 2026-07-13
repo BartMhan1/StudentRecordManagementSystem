@@ -1,0 +1,21 @@
+StudentId,FullName,DateOfBirth,Gender,Course,MathScore,EnglishScore,ScienceScore,HistoryScore,CSScore
+01246459B,Lordina Oforiwaa Amoako,2004-04-15,Female,Computer Science,75.0,82.0,80.0,70.0,85.0
+01240182B,Eleazer Kofi Enam Tamakloe,2003-08-20,Male,Computer Science,65.0,70.0,68.0,60.0,72.0
+01243345B,Antwi Festus,2004-11-05,Male,Computer Science,88.0,85.0,90.0,82.0,95.0
+01242457B,Dey Richmond,2003-02-14,Male,Computer Science,55.0,58.0,60.0,52.0,62.0
+01244096B,Sowah Nicholas Okpoti Junior,2004-07-30,Male,Computer Science,70.0,75.0,72.0,65.0,78.0
+01242653B,Prince Ayaata Awenanyame Kwame,2003-12-10,Male,Computer Science,45.0,48.0,50.0,42.0,40.0
+01244622B,Eklu Fabris,2004-09-18,Male,Computer Science,60.0,62.0,65.0,58.0,67.0
+01242888B,Adosibe Kennedy Awine,2003-05-25,Male,Computer Science,80.0,78.0,85.0,72.0,88.0
+01245880B,Kelvin OSEI,2004-01-08,Male,Computer Science,92.0,90.0,94.0,88.0,96.0
+01245954B,Narter-Tawiah Isaac Yohanes,2003-10-12,Male,Computer Science,68.0,72.0,70.0,62.0,75.0
+01245278B,Mensah Emmanuel Ankomah,2004-03-22,Male,Computer Science,74.0,76.0,78.0,70.0,80.0
+01240262B,Zakaria Abdul Ganiyu,2003-06-30,Male,Computer Science,58.0,60.0,62.0,55.0,65.0
+01244533B,Dominic Gyimah,2004-08-05,Male,Computer Science,82.0,80.0,84.0,76.0,86.0
+01244733B,Osam Theodora,2004-12-15,Female,Computer Science,76.0,80.0,78.0,72.0,82.0
+01244946B,Boare Bartholomew,2004-02-18,Male,Computer Science,95.0,92.0,96.0,90.0,98.0
+01245244B,Darko-Ameyaw Joel,2003-07-28,Male,Computer Science,63.0,66.0,64.0,58.0,70.0
+01243019B,Arthur George Nana Siw,2004-05-09,Male,Computer Science,85.0,88.0,86.0,80.0,90.0
+01245133B,Success Annan,2003-09-14,Female,Computer Science,72.0,74.0,76.0,68.0,78.0
+01246885B,Darkwah Ohene Kofi Michael,2004-10-25,Male,Computer Science,66.0,68.0,70.0,60.0,74.0
+01244200B,Ahiave Bismark,2003-04-03,Male,Computer Science,48.0,52.0,50.0,45.0,46.0
