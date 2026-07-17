@@ -1,8 +1,8 @@
 # 🎓 Student Record Management System
 
-A **Java 11 console-based application** developed to help a private school manage student records efficiently. The system replaces manual record keeping by allowing authorized users to securely add, search, update, delete, and analyze student information through a menu-driven interface.
+Our **Student Record Management System** is a Java 11 console app we built for our group project to help a school manage their student records. Instead of keeping everything on paper, this app lets admins and teachers log in to add, search, update, delete, and look at student information using a simple menu.
 
-This project was developed as part of a Java programming assignment with a strong emphasis on **Object-Oriented Programming (OOP) principles**, **data validation**, and **file handling**.
+We made this project for our Java programming assignment to practice **Object-Oriented Programming (OOP) principles**, making sure the data entered is valid, and learning how to read and write from files.
 
 ---
 
@@ -264,10 +264,10 @@ This project was developed as a group assignment. Contributors include:
 *   **Darkwah Ohene Kofi Michael**
 *   **Ahiave Bismark**
 
-Repository documentation and implementation were prepared for collaborative learning and presentation.
+This project was developed for our Java group assignment.
 
 ---
 
-## 📄 License
+## 📄 Disclaimer
 
-This project was developed for educational purposes only.
+This project was developed for educational purposes only for our university assignment.

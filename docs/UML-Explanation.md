@@ -285,8 +285,8 @@ Polymorphism allows different classes to respond differently to the same method 
 
 ## 🏁 Conclusion
 
-The UML Class Diagram illustrates the overall architecture of the Student Record Management System.
+This UML Class Diagram shows the basic architecture of our Student Record Management System.
 
-It demonstrates how the application applies Object-Oriented Programming principles to produce a modular, maintainable, and well-organized solution.
+By looking at it, you can see how we used Object-Oriented Programming principles to keep our code modular and organized.
 
-Understanding the relationships shown in the diagram makes it easier to understand how the classes collaborate to perform the required tasks within the system.
+Understanding these relationships really helped our group see how all the different classes talk to each other to make the whole system work.
