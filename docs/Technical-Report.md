@@ -7,6 +7,7 @@
 4. [System Implementation](#4-system-implementation)
 5. [Testing](#5-testing)
 6. [Conclusion](#6-conclusion)
+7. [Project Contributors](#7-project-contributors)
 
 ---
 
@@ -138,3 +139,30 @@ The Student Record Management System successfully achieved the objectives outlin
 Through the implementation of abstraction, encapsulation, inheritance, and polymorphism, the system was designed to be modular, maintainable, and easy to extend. Input validation, role-based access control, and automatic CSV file persistence contribute to the reliability of the application.
 
 Overall, the project demonstrates how Java can be used to develop a structured and efficient console-based management system capable of replacing manual record-keeping methods in a small educational environment.
+
+---
+
+## 7. Project Contributors
+
+This project was developed by the following team members:
+
+1. Lordina Oforiwaa Amoako - 01246459B
+2. Eleazer Kofi Enam Tamakloe - 01240182B
+3. Antwi Festus - 01243345B
+4. Dey Richmond - 01242457B
+5. Sowah Nicholas Okpoti Junior - 01244096B
+6. Prince Ayaata Awenanyame Kwame - 01242653B
+7. Eklu Fabris - 01244622B
+8. Adosibe Kennedy Awine - 01242888B
+9. Kelvin OSEI - 01245880B
+10. Narter-Tawiah Isaac Yohanes - 01245954B
+11. Mensah Emmanuel Ankomah - 01245278B
+12. Zakaria Abdul Ganiyu - 01240262B
+13. Dominic Gyimah - 01244533B
+14. Osam Theodora - 01244733B
+15. Boare Bartholomew - 01244946B
+16. Darko-Ameyaw Joel - 01245244B
+17. Arthur George Nana Siw - 01243019B
+18. Success Annan - 01245133B
+19. Darkwah Ohene Kofi Michael - 01246885B
+20. Ahiave Bismark - 01244200B
